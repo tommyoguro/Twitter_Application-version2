@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TwitterApplication</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <header>
+   <div class="header_Left">
+    <h1>Twitter風アプリ</h1>
+     <nav>
+       <ul>
+         <li><a href="#home">ホーム</a></li>
+         <li><a href="#profile">プロフィール</a></li>
+         <li><a href="#settings">設定</a></li>
+       </ul>
+     </nav>
+   </div>
+  </header>  
+    <%= yield %>
+
+  <footer>
+   <div class="footer_Left">
+    <p>&copy; 2024 Twitter風アプリ. All rights reserved.</p>
+     <ul>
+       <li><a href="#about">このアプリについて</a></li>
+       <li><a href="#terms">利用規約</a></li>
+       <li><a href="#privacy">プライバシーポリシー</a></li>
+     </ul>
+   </div>
+  </footer>
+  </body>
+</html>

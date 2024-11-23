@@ -1,0 +1,101 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ /* ヘッダーのスタイル */
+header {
+    background-color: #1da1f2;
+    color: white;
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  header .header_Left {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+  }
+  
+  header nav ul li {
+    display: inline;
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  header nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* フッターのスタイル */
+  footer {
+    background-color: #f5f8fa;
+    color: #657786;
+    padding: 15px 0;
+    text-align: center;
+    border-top: 1px solid #e1e8ed;
+  }
+  
+  footer .footer_Left {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 12px;
+  }
+  
+  footer ul {
+    list-style: none;
+    margin: 10px 0 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  footer ul li {
+    display: inline;
+  }
+  
+  footer ul li a {
+    color: #1da1f2;
+    text-decoration: none;
+    font-size: 12px;
+  }
+  
+  footer ul li a:hover {
+    text-decoration: underline;
+  }
+  
